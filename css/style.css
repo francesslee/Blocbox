@@ -7,10 +7,10 @@ body {
 	color:#333333;
 }
 h1, h2, h3, h4, h5, h6 {
-	font-family: "Quicksand"; Helvetica, Arial, sans-serif;
+	font-family: "Quicksand", Helvetica, Arial, sans-serif;
 }
 h2 {
-	font-size: 28xpx;
+	font-size: 28px;
 	font-weight: normal;
 	margin-bottom: 5px;
 }
@@ -28,16 +28,16 @@ p {
 	padding-right: 40px;
 	position: relative;
 }
-.container:before.
+.container:before,
 .container:after {
 	content: " ";
-	dislpay: table;
+	display: table;
 }
 .container:after {
 	clear: both;
 }
 .one-half, .one-third, .one-fourth {
-	width: 96%
+	width: 96%;
 	float: left;
 	position: relative;
 	min-height: 1px;
