@@ -14,7 +14,7 @@
 	<header>
 		<nav class="container">
 			<div class="one-half">
-				<a href="index.html" class="site-logo"><img src="images/site-logo.png" alt="Blocbox" /></a>
+				<a href="index.html" class="site-logo"><img src="images/site-logo.png" alt="Blocbox"></a>
 			</div>
 			<div class="one-half">
 				<ul>
@@ -29,7 +29,7 @@
 				helps keep your life organized. Keep all your notes, </br> 
 				photos, and bookmarks all in one tidy place.</p>
 			<a href="signup.html" class="btn">Get Started For Free</a>
-			<img src="images/macbook.png" alt="Blocbox" />
+			<img src="images/macbook.png" alt="Blocbox">
 		</div>
 	<main role="main">
 		<!-- Benefits -->
@@ -105,8 +105,17 @@
 			</ul>
 			<li class="one-half">
 					<div class="right-block">
-						<h4>Email</h4>
-						<h4>Password</h4>
+						<form>
+ 							<fieldset>
+ 								<legend lang="en">Sign up form</legend>
+  								 <label for="email2" class="show-hide-label">Email</label>
+            <input type="email" name="email" id="email2" data-validate="required, email, email_in_use" placeholder="Email"/>
+           						<br>
+  								<label for="password-login2" class="show-hide-label">Password</label>
+            <input type="password" name="password" id="password-login2" data-validate="required, password" placeholder="Password"/>
+						 	</fieldset>
+						</form>
+
 						 <a href="signup.html" class="btn">Sign Up For Free</a>
 					</div>
 				</li>
@@ -129,7 +138,7 @@
 				<ul>
 			</nav>
 			<div class="right-footer-block one-third">
-				<img class="logo" src="images/site-logo.png" alt="Blocbox" />
+				<img class="logo" src="images/site-logo.png" alt="Blocbox">
 			</div>
 		</footer>
 </body>
