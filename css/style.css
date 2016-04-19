@@ -29,7 +29,7 @@ h5 {
 	text-transform: capitalize;
 }
 p {
-	font-size: 19px;
+	font-size: 17px;
 	line-height: 19px;
 	font-weight: normal;
 }
@@ -150,6 +150,7 @@ header .hero a {
 	border-radius: 2px;
 	color: #FFFFFF;
 	font-weight: 700;
+	text-align: center;
 	text-decoration: none;
 	padding: 20px 30px;
 	margin-top: 40px;
@@ -184,7 +185,7 @@ main .hero p {
 }
 .benefits ul {
 	margin: 0 auto;
-	padding: 4em 0;
+	padding: 2em 0;
 }
 .benefits ul li {
 	display: inline-block;
@@ -192,12 +193,15 @@ main .hero p {
 .benefits h2 {
 	font-weight: bold;
 }
+.benefits .actions {
+	margin-top: 30px;
+}
 /* PRICING */
 .pricing {
 	color: #FFFFFF;
 	background: #2195db;
 	text-align: center;
-	padding: 4em 0;
+	padding: 2em 0;
 }
 .pricing ul {
 	margin: 0 auto;
@@ -213,6 +217,10 @@ main .hero p {
 .pricing h2 {
 	font-weight: normal;
 	padding: 20px;
+}
+.month {
+	font-size: 22px;
+	padding-top: 15px;
 }
 .box .btn {
 	color: #2195db;
@@ -238,4 +246,87 @@ main .hero p {
 }
 .box h2 span {
 	vertical-align: top;
+}
+/* CTA */
+.calltoaction {
+	height: 250px;
+	position: relative;
+}
+
+.calltoaction .left-block {
+	position: absolute;
+	text-align: center;
+	color: #2195db;
+	margin: 30px 150px 0;
+	padding: 2.35em 0;
+}
+.calltoaction .right-block {
+	position: relative;
+	text-align: right;
+	margin: 30px 150px 0;
+}
+input[type=email], select {
+	width: 35%;
+	padding: 12px 20px;
+	margin: 8px 0 8px;
+	border: 2px solid #2195db;
+	display: inline-block;
+	text-align: center;
+}
+input[type=password], select {
+	width: 35%;
+	padding: 12px 20px;
+	margin: 8px 0 8px;
+	border: 2px solid #2195db;
+	display: inline-block;
+	text-align: center;
+}
+fieldset {
+	border: none;
+	height: 40px;
+}
+.calltoaction .right-block .btn {
+	background: #2195db;
+	color: #FFFFFF;
+	float: right;
+	margin-top: 80px;
+	margin-right: 10px;
+	padding-left: 95px;
+	padding-right: 95px;
+}
+/* FOOTER */
+footer {
+	background-color: #767b82;
+	color: #FFFFFF;
+	height: 250px;
+	position: relative;
+	overflow: hidden;
+	z-index: 0;
+}
+footer p, footer nav ul {
+	text-align: center;
+	margin: 10px auto 0;
+}
+footer nav ul li {
+	display: inline;
+	font-size: 15px;
+}
+footer nav ul li a {
+	color: #FFFFFF;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+footer .logo {
+	padding: 2.35em 0;
+	margin: 0 auto;
+	display: block;
+}
+/* Why can't I copy the properties from the above and get the same result? */
+footer .os {
+	margin: 0 auto;
+	display: block;
+	width: 100%;
+}
+footer .os img {
+	padding: 0 20px 0;
 }
