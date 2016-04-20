@@ -41,8 +41,8 @@ li {
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 40px;
-	padding-right: 40px;
+	padding-left: 10px;
+	padding-right: 10px;
 	position: relative;
 }
 .container:before,
@@ -146,7 +146,7 @@ header .hero a {
 .btn {
 	border-radius: 2px;
 	color: #FFFFFF;
-	font-weight: 700;
+	font-weight: bold;
 	text-align: center;
 	text-decoration: none;
 	padding: 20px 30px;
@@ -327,3 +327,172 @@ footer .os {
 footer .os img {
 	padding: 0 20px 0;
 }
+/* DASHBOARD */
+.dashboard {
+	background-color: #dde5f1;
+}
+/* LEFT NAV BAR */
+/* Do I set width as a percentage? */
+.left-nav {
+	height: 100vh;
+	width: 14%;
+	color: #353535;
+	background-color: #f1f4f7;
+	float: left;
+	position: fixed;
+	display: block;
+}
+.left-nav .site-symbol {
+	margin: 40px;
+	display: block;
+	text-align: center;
+	clear: right;
+	position: relative;
+}
+/* how do I override the bold property set in .btn? */
+.left-nav .btn {
+	color: #fff;
+	background-color: #3c88cb;
+	border: none;
+	font-style: normal;
+	margin: 40px 20px;
+	position: relative;
+}
+.left-nav .view-all {
+	margin: 60px 40px 20px 40px;
+}
+.left-nav .view-all a {
+	color: #353535;
+	text-decoration: none;
+}
+.left-nav .items {
+	padding: 0 10px;
+}
+.left-nav .items p {
+	text-transform: uppercase;
+	font-size: 12px;
+	line-height: 15px;
+}
+.left-nav .items ul li {
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+.left-nav .items ul li a {
+	color: #353535;
+	text-decoration: none;
+}
+.leftnav .items ul li a i {
+	width: 16px;
+	text-align: center;
+	margin-right: 10px;
+}
+/* SETTINGS */
+.left-nav .settings {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 10px 0;
+}
+.left-nav .settings img {
+	height 25px;
+	width: 25px;
+	margin-left: 80px;
+	border-radius: 50%;
+	display: inline-block;
+}
+.left-nav .settings p {
+	margin-left: 40px;
+	display: inline-block;
+}
+/* CONTENT */
+.content {
+	padding: 6em 1% 1.5em;
+	float: right;
+	width: 98%;
+	position: relative;
+}
+.content .header {
+	margin: 10px 1% 20px;
+} 
+.content .header .item-actions li {
+	display: inline;
+	float: right;
+	margin: 10px;
+}
+#last {
+	margin-right: 0;
+	}
+.item-actions a {
+	color: #353535;
+	text-decoration: none;
+}
+.content-item {
+	width: 96%;
+	margin: 0 2% 25px;
+	float: left;
+	display: block;
+}
+.item-box {
+	display: block;
+	position: relative;
+	overflow: hidden;
+	padding: 10px;
+}
+.item-box p {
+	color: #353535;
+	margin-top: 10px;
+}
+.item-box #selected {
+	background-color: #b9c0ca;
+	width: 50px;
+	height: 75px;
+}
+/* LARGER MOBILE DEVICES */
+@media (min-width460px) {
+	.content {
+		padding: 1.5em 1%;
+		float: right;
+		width 90%;
+		position: relative;
+	}
+	.content-item {
+		width: 46%;
+		margin: 0 2% 25px;
+		float: left;
+		display: block;
+	}
+}
+/* TABLETS */
+	@media (min-width: 768px) {
+		.content {
+			padding: 1.5em 5%;
+			float: right;
+			width: 90%;
+			position: relative;
+		}
+		.content > .container {
+			width: 700px;
+		}
+		.content-item {
+			width: 31.33333%
+			margin: 0 1% 25px;
+		}
+	}
+/* LAPTOPS AND DESKTOPS */
+	@media (min-width: 992px) {
+		.content {
+			padding: 1.5em 1%;
+			float: right;
+			width: 83.33333%;
+			position: relative;
+		}
+		.content > .container {
+			width: auto;
+		}
+		.content-item {
+			width: 23%;
+			margin: 0 1% 25px;
+		}
+	}
