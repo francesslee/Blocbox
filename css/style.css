@@ -5,38 +5,11 @@ body {
 	font-family: "Quicksand", Helvetica, Arial, sans-serif;
 	color:#333333;
 }
-h1, h2, h3, h4, h5, h6 { 
-	font-family: "Quicksand", Helvetica, Arial, sans-serif; 
-}
-h1 { 
-	font-size: 48px; 
-}
-h2 {
-	font-size: 29px;
-	font-weight: normal;
-	margin-bottom: 5px;
-}
-h3 {
-	font-size: 24px;
-	font-weight: normal;
-}
-h4 {
-	font-size: 22px;
-}
-h5 {
-	font-size: 15px;
-	text-transform: capitalize;
+h1, h2, h3, h4, h5, h6 { font-family: "Quicksand", Helvetica, Arial, sans-serif; 
 }
 p {
-	font-size: 17px;
-	line-height: 19px;
-	font-weight: normal;
+	margin: 10px;
 }
-
-li { 
-	list-style-type: none; 
-}
-
 /* GRID */
 .container {
 	margin-right: auto;
@@ -58,11 +31,296 @@ li {
 	float: left;
 	position: relative;
 	min-height: 1px;
-	margin: 0 2% 20px;
+	margin: 0 2% 10px;
+}
+.box {
+	padding: 10px 15px 15px;
+	background: #1a75ac;
+	position: relative;
+	margin-top: 5px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+.box.middle {
+		background: #021283;
+}
+/* Default styles for smallest screen */
+	header {
+	color: #fff;
+	background: #2195db;
+	}
+	h1 {
+		font-size: 26px;
+		text-align: center;
+	}
+	h2 {
+		font-size: 20px;
+		text-align: center;
+	}
+	p {
+		font-size: 14px;
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	a {
+		text-decoration: none;
+	}
+	img {
+		width: 100%;
+		display: block;
+	}
+	.site-logo {
+		width: 35%;
+		float: left;
+		margin-top: 18px;
+	}
+	ul { 
+		list-style-type: none; 
+		margin-left: -40px;
+		float: right;
+	}
+	li {
+		display: inline;
+		float: left;
+	}
+	.log-in {
+		margin-right: 20px;
+		margin-top: 4px;
+	}
+	.log-in a {
+		color: #fff;
+		margin-left: 20px;
+		font-size: 13px;
+	}
+	.sign-up a {
+		color: #fff;
+		margin-left: 10px;
+		font-size: 13px;
+	}
+	.btn {
+		border-radius: 2px;
+		background-color: #fff;
+		color: #2195db;
+		position: relative;
+		width: 90%;
+		text-align: center;
+		font-weight: bold;
+		text-decoration: none;
+		padding: 20px 10px;
+		margin: auto;
+		margin-bottom: 10px;
+		display: block;
+	}
+	.btn-outline {
+		padding: 10px 10px 10px 0;
+		margin: -8px;
+		margin-right: 3px;
+		border: 2px solid #FFFFFF;
+		border-radius: 2px;
+		float: left;
+	}
+	.macbook {
+		margin-top: 20px;
+		margin-bottom: -60px;
+	}
+	.icon {
+		display: block;
+		width: 20%;
+		margin: 0 auto;
+	}
+	h2.lower-hero {
+		font-size: 22px;
+		color: #767b82;
+		font-style: normal;
+		margin: 80px 10px 10px;
+		font-weight: lighter;
+	}
+	p.lower-hero {
+		color: #767b82;
+		margin-bottom: 40px;
+	}
+	.benefits {
+		color: #767b82;
+	}
+	h3.icon {
+		width: 60%;
+		margin: 10px auto;
+		text-align: center;
+		font-size: 18px;
+		font-weight: lighter;
+	}
+	.blue-area {
+		color: #fff;
+		background-color: #2195db;
+		padding-top: 20px;
+	} 
+	h2.pricing {
+		font-size: 22px;
+	}
+	ul.pricing {
+		color: #fff;
+		background-color: #2195db;
+		margin-top: -16px;
+		padding-top: 16px;
+		width: 100%;
+	}
+	h2.tier {
+		text-transform: uppercase;
+		font-size: 18px;
+		font-weight: lighter;
+	}
+	ul.feature {
+		float: none;
+		position: relative;
+		margin-left: 0;
+	}
+	li.feature {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		margin-left: -40px;
+		float: none;
+	}
+	h2.feature {
+		display: block;
+		margin-bottom: 0;
+		font-weight: lighter;
+	}
+	.month {
+		font-size: 14px;
+	}
+	.calltoaction {
+		margin-top: 10px;
+	}
+	.first-block {
+		text-align: center;
+		color: #767b82;
+		font-weight: normal;
+	}
+	input[type=email], select {
+		width: 75%;
+		padding: 12px 20px;
+		margin: 8px 0 8px;
+		border: 2px solid #2195db;
+		display: inline-block;
+		text-align: center;
+	}
+	input[type=password], select {
+		width: 75%;
+		padding: 12px 20px;
+		margin: 8px 0 8px;
+		border: 2px solid #2195db;
+		display: inline-block;
+		text-align: center;
+	}
+	.btn.cta {
+		background-color: #2195db;
+		color: #fff;
+		width: 80%;
+	}
+	form {
+		text-align: center;
+	}
+	fieldset {
+		border: none;
+	}
+	footer {
+		background-color: #767b82;
+		color: #FFFFFF;
+		margin-top: 40px;
+	}
+	.footer-logo {
+		width: 40%;
+		display: block;
+		margin: 10px auto;
+	}
+	.os {
+		width: 60%;
+		display: block;
+		margin: 20px auto 10px;
+		text-align: center;
+	}
+	.os-icon {
+		width: 10%;
+		display: inline-block;
+	}
+	.terms {
+		margin: 10px auto;
+		text-align: center;
+		position: relative;
+		float: left;
+	}
+	ul.terms {
+		width: 90%;
+		display: inline-block;
+		margin: auto;
+	}
+	li.terms {
+		font-size: 12px;
+	}
+@media (min-width: 500px) {
+	.site-logo {
+		width: 25%;
+	}
+	.btn {
+		width: 60%;
+	}
+	.icon {
+		width: 15%;
+	}
+	.box {
+		margin: 3px 20px;
+	}
+	.footer-logo {
+		width: 25%;
+		margin-top: 20px;
+	}
+	.os-icon {
+		width: 7%;
+	}
+} 
+@media (min-width: 650px) {
+	.container {
+		width: 630px;	
+	}
+	.site-logo {
+		width: 20%;
+	}
+	.macbook {
+		width: 70%;
+		margin-right: auto;
+		margin-left: auto;
+	}
+	.icon {
+		width: 25%;
+	}
+	input[type=email], select {
+		width: 40%;
+	}
+	input[type=password], select {
+		width: 40%;
+	}
+	.btn.cta {
+		width: 40%;
+	}
+	.one-third {
+		width: 29.33333%;
+	}
+	.box {
+		width: 80%;
+	}
+	.footer-logo {
+		width: 20%;
+	}
+	.os-icon {
+		width: 5%;
+	}
 }
 @media (min-width: 758px) {
 	.container {
 		width: 750px;
+	}
+	ul.container {
+		width: auto;
 	}
 }
 @media (min-width: 992px) {
@@ -70,429 +328,93 @@ li {
 		width: 970px;
 	}
 	.one-half {
-		width: 46%;
+		width: 95%;
 	}
 	.one-third {
-		width:29.33333%;
+		width: 27%;
 	}
 	.one-fourth {
 		width: 21%;
 	}
-}
-@media (min-width: 1200px) {
-	.container {
-		width: 1170px;
+	.site-logo {
+		width: 15%;
 	}
-}
-/* HEADER */
-header {
-	color: #FFFFFF;
-	background: #2195db;
-}
-header nav {
-	padding: 1em 0;
-}
-header nav ul {
-	display: inline;
-	text-align: right;
-	float: right;
-	margin: 0;
-}
-header nav ul > li {
-	display: inline-block;
-	margin: 0 15px;
-}
-header nav ul > li.btn-outline {
-	padding: 10px 15px;
-	border: 2px solid #FFFFFF;
-	border-radius: 2px;
-}
-header nav ul > li.btn-outline:hover {
+	.btn {
+		width: 80%;
+	}
+	.btn.sign-up {
+		width: 30%;
+	}
+	header nav ul > li.btn-outline:hover {
 	background:#FFFFFF;
-}
-header nav ul > li > a {
-	color: #FFFFFF;
-	text-decoration: none;
-}
-header nav ul > li.btn-outline:hover > a {
-	color:#34495E;
-}
-header .hero {
-	text-align: center;
-	display: block;
-	position: relative;
-}
-header .hero h1 {
-	font-size: 48px;
-	font-weight: bold;
-	margin: 95px 0 0;
-}
-header .hero p {
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 100;
-	margin: 20px 0 40px;
-}
-header .hero img {
-	display: block;
-	margin: 3em auto 0;
-}
-header .hero a {
-	color: #2195db;
-	text-transform: uppercase;
-	font-style: normal;
-}
-/* BUTTONS */
-.btn {
-	border-radius: 2px;
-	color: #FFFFFF;
-	font-weight: bold;
-	text-align: center;
-	text-decoration: none;
-	padding: 20px 30px;
-	margin-top: 40px;
-	background: #FFFFFF;
-	border: 2px solid #FFFFFF;
-}
-/* MAIN */
-main .hero {
-	text-align: center;
-	display: block;
-	position: relative;
-}
-main .hero h1 {
-	font-size: 48px;
-	font-weight: normal;
-	color: #767b82;
-	margin: 95px 0 0;
-}
-main .hero p {
-	font-size: 22px;
-	line-height: 26px;
-	font-weight: 100;
-	color: #767b82;
-	margin: 10px 0 40px;
-}
-/* BENEFITS */
-.benefits {
-	text-align: center;
-	display: block;
-	position: relative;
-	color: #767b82;
-}
-.benefits ul {
-	margin: 0 auto;
-	padding: 2em 0;
-}
-.benefits ul li {
-	display: inline-block;
-}
-.benefits h2 {
-	font-weight: bold;
-}
-.benefits .actions {
-	margin-top: 30px;
-}
-/* PRICING */
-.pricing {
-	color: #FFFFFF;
-	background: #2195db;
-	text-align: center;
-	padding: 2em 0;
-}
-.pricing ul {
-	margin: 0 auto;
-}
-.pricing li {
-	margin-top: 15px;
-	margin-right: 15px;
-	text-align: center;
-}
-.pricing h1 {
-	font-weight: normal;
-}
-.pricing h2 {
-	font-weight: normal;
-	padding: 20px;
-}
-.month {
-	font-size: 22px;
-	padding-top: 15px;
-}
-.box .btn {
-	color: #2195db;
-	position: absolute;
-	bottom: 30px;
-	left: 30px;
-	right: 30px;
-} 
-.box {
-	padding: 0 15px 15px;
-	background: #1a75ac;
-	min-height: 375px;
-	position: relative;
-	margin-top: 25px;
-	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-}
-.box.middle {
-	background: #021283;
-}
-/* why isn't this making Basic/Adv/Pro uppercase? */
-.box .caps {
-	text-transform: uppercase;
-}
-.box h2 span {
-	vertical-align: top;
-}
-/* CTA */
-.calltoaction {
+	}
+	header nav ul > li > a {
+		color: #FFFFFF;
+		text-decoration: none;
+	}
+	header nav ul > li.btn-outline:hover > a {
+		color: #2195db;
+		font-weight: bold;
+	}
+	p.hero {
+		font-size: 16px;
+		margin: 20px 150px;
+	}
+	p.lower-hero {
+		font-size: 16px;
+		margin: 20px 150px;
+	}
+	h1 {
+		font-size: 40px;
+	}
+	h2.lower-hero { 
+		font-size: 30px;
+	}
+	.icon {
+		width: 30%;
+	}
+	.box {
+		width: 90%;
+	}
+	ul.pricing {
+		padding-bottom: 20px;
+	}
+	h2.pricing {
+		font-size: 30px;
+	}
+	input[type=email], select {
+		width: 25%;
+	}
+	input[type=password], select {
+		width: 25%;
+	}
+	.calltoaction {
 	height: 250px;
 	position: relative;
-}
+	}
+	.calltoaction .first-block {
+		position: absolute;
+		text-align: center;
+		color: #2195db;
+		padding: 2.35em 0;
+	}
+	h3.first-block {
+		width: 100px;
+		font-weight: normal;
 
-.calltoaction .left-block {
-	position: absolute;
-	text-align: center;
-	color: #2195db;
-	margin: 30px 150px 0;
-	padding: 2.35em 0;
-}
-.calltoaction .right-block {
-	position: relative;
-	text-align: right;
-	margin: 30px 150px 0;
-}
-input[type=email], select {
-	width: 35%;
-	padding: 12px 20px;
-	margin: 8px 0 8px;
-	border: 2px solid #2195db;
-	display: inline-block;
-	text-align: center;
-}
-input[type=password], select {
-	width: 35%;
-	padding: 12px 20px;
-	margin: 8px 0 8px;
-	border: 2px solid #2195db;
-	display: inline-block;
-	text-align: center;
-}
-fieldset {
-	border: none;
-	height: 40px;
-}
-.calltoaction .right-block .btn {
-	background: #2195db;
-	color: #FFFFFF;
-	float: right;
-	margin-top: 80px;
-	margin-right: 10px;
-	padding-left: 95px;
-	padding-right: 95px;
-}
-/* FOOTER */
-footer {
-	background-color: #767b82;
-	color: #FFFFFF;
-	height: 250px;
-	position: relative;
-	overflow: hidden;
-	z-index: 0;
-}
-footer p, footer nav ul {
-	text-align: center;
-	margin: 10px auto 0;
-}
-footer nav ul li {
-	display: inline;
-	font-size: 15px;
-}
-footer nav ul li a {
-	color: #FFFFFF;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-footer .logo {
-	padding: 2.35em 0;
-	margin: 0 auto;
-	display: block;
-}
-/* Why can't I copy the properties from the above and get the same result? */
-footer .os {
-	margin: 0 auto;
-	display: block;
-	width: 100%;
-}
-footer .os img {
-	padding: 0 20px 0;
-}
-/* DASHBOARD */
-.dashboard {
-	background-color: #dde5f1;
-}
-/* LEFT NAV BAR */
-/* Do I set width as a percentage? */
-.left-nav {
-	height: 100vh;
-	width: 14%;
-	color: #353535;
-	background-color: #f1f4f7;
-	float: left;
-	position: fixed;
-	display: block;
-}
-.left-nav .site-symbol {
-	margin: 40px;
-	display: block;
-	text-align: center;
-	clear: right;
-	position: relative;
-}
-/* how do I override the bold property set in .btn? */
-.left-nav .btn {
-	color: #fff;
-	background-color: #3c88cb;
-	border: none;
-	font-style: normal;
-	margin: 40px 20px;
-	position: relative;
-}
-.left-nav .view-all {
-	margin: 60px 40px 20px 40px;
-}
-.left-nav .view-all a {
-	color: #353535;
-	text-decoration: none;
-}
-.left-nav .items {
-	padding: 0 10px;
-}
-.left-nav .items p {
-	text-transform: uppercase;
-	font-size: 12px;
-	line-height: 15px;
-}
-.left-nav .items ul li {
-	list-style-type: none;
-	margin-bottom: 20px;
-}
-.left-nav .items ul li a {
-	color: #353535;
-	text-decoration: none;
-}
-.leftnav .items ul li a i {
-	width: 16px;
-	text-align: center;
-	margin-right: 10px;
-}
-/* SETTINGS */
-.left-nav .settings {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	padding: 10px 0;
-}
-.left-nav .settings img {
-	height 25px;
-	width: 25px;
-	margin-left: 80px;
-	border-radius: 50%;
-	display: inline-block;
-}
-.left-nav .settings p {
-	margin-left: 40px;
-	display: inline-block;
-}
-/* CONTENT */
-.content {
-	padding: 6em 1% 1.5em;
-	float: right;
-	width: 98%;
-	position: relative;
-}
-.content .header {
-	margin: 10px 1% 20px;
-} 
-.content .header .item-actions li {
-	display: inline;
-	float: right;
-	margin: 10px;
-}
-#last {
-	margin-right: 0;
 	}
-.item-actions a {
-	color: #353535;
-	text-decoration: none;
-}
-.content-item {
-	width: 96%;
-	margin: 0 2% 25px;
-	float: left;
-	display: block;
-}
-.item-box {
-	display: block;
-	position: relative;
-	overflow: hidden;
-	padding: 10px;
-}
-.item-box p {
-	color: #353535;
-	margin-top: 10px;
-}
-.item-box #selected {
-	background-color: #b9c0ca;
-	width: 50px;
-	height: 75px;
-}
-/* LARGER MOBILE DEVICES */
-@media (min-width460px) {
-	.content {
-		padding: 1.5em 1%;
-		float: right;
-		width 90%;
+	.calltoaction .second-block {
 		position: relative;
+		text-align: right;
+		margin: 30px 150px 0;
 	}
-	.content-item {
-		width: 46%;
-		margin: 0 2% 25px;
-		float: left;
-		display: block;
+	.btn.cta {
+		width: 27%;
+	}
+	.footer-logo {
+		width: 15%;
+	}
+	.os-icon {
+		width: 4%;
 	}
 }
-/* TABLETS */
-	@media (min-width: 768px) {
-		.content {
-			padding: 1.5em 5%;
-			float: right;
-			width: 90%;
-			position: relative;
-		}
-		.content > .container {
-			width: 700px;
-		}
-		.content-item {
-			width: 31.33333%
-			margin: 0 1% 25px;
-		}
-	}
-/* LAPTOPS AND DESKTOPS */
-	@media (min-width: 992px) {
-		.content {
-			padding: 1.5em 1%;
-			float: right;
-			width: 83.33333%;
-			position: relative;
-		}
-		.content > .container {
-			width: auto;
-		}
-		.content-item {
-			width: 23%;
-			margin: 0 1% 25px;
-		}
-	}
