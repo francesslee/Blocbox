@@ -10,6 +10,13 @@ h1, h2, h3, h4, h5, h6 { font-family: "Quicksand", Helvetica, Arial, sans-serif;
 p {
 	margin: 10px;
 }
+ul {
+	list-style-type: none;
+}
+a {
+	text-decoration: none;
+	color: #353535;
+}
 /* GRID */
 .container {
 	margin-right: auto;
@@ -24,21 +31,29 @@ p {
 	display: table;
 }
 .container:after {	clear: both; }
-.one-half, 
-.one-third, 
-.one-fourth {
-	width: 96%;
-	float: left;
-	position: relative;
-	min-height: 1px;
-	margin: 0 2% 10px;
+.menu {
+	background-color: #f1f4f7;
 }
-.top-nav
-.btn {
-	color: #fff;
-	background-color: #3c88cb;
-	border: none;
-	font-style: normal;
-	margin: 40px 20px;
-	position: relative;
+.site-symbol {
+	width: 15%;
+}
+.item-actions {
+	display: inline;
+}
+.main {
+	background-color: #dde5f1;
+}
+.content-item {
+	width: 90%;
+	float: left;
+}
+.item-box {
+	display: inline;
+}
+.item-box img{
+	width: 25%;
+}
+.item-box p {
+	font-size: 12px;
+	display: inline;
 }
