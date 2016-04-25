@@ -13,14 +13,24 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style-dash.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/dropit.css">
 </head>
 <body class ="dashboard">
 
 <!-- HEADER -->
-	<div class="container menu left-nav">
+	<div class="container top-menu left-nav">
 		<a href="#"><img class="site-symbol" src="images/site-symbol.png"></a>
 		<div class "add-item">
-			<a href="additem.html" class="btn add">Add Item</a>
+			    <ul class="menu">
+            <li>
+              <a href="#" class="btn add">Add Item</a>
+              <ul>
+                  <li><a href="#"><i class="fa fa-file-o"></i> Note</a></li>
+                  <li><a href="#"><i class="fa fa-picture-o"></i> Image</a></li>
+                  <li><a href="#"><i class="fa fa-link"></i> Link</a></li>
+              </ul>
+            </li>
+          </ul>
 		</div>
 
 	<!-- NAVIGATION -->
@@ -135,6 +145,11 @@
     				</div>
     			</div>
     	</main>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/dropit.js"></script>
+    <script type="text/javascript">
+     $(".menu").dropit();
+   	</script>
 </body>
 </html>
 

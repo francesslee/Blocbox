@@ -33,7 +33,7 @@ p {
 }
 .container:after {	clear: both; }
 
-.menu {
+.top-menu {
 	background-color: #f1f4f7;
 }
 /* SMALLEST BROWSER SIZE */
@@ -170,9 +170,6 @@ div.display-menu {
 @media (min-width: 992px) {
 	.left-nav {
 		width: 14%;
-	}
-	p.count {
-		float: left;
 	}
 	.item-actions > a {
 		width: 83%;
