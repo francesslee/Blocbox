@@ -55,7 +55,8 @@ li.filtered {
 	padding: 5px;
 }
 ul.view {
-padding-left: 30px;
+	padding-left: 30px;
+	margin-top: 10px;
 }
 img.avatar {
 	width: 30px;
@@ -170,25 +171,33 @@ div.display-menu {
 	.left-nav {
 		width: 14%;
 	}
-	.item-actions {
+	p.count {
+		float: left;
+	}
+	.item-actions > a {
 		width: 83%;
+		float: right;
 	}
 	.main {
 		width: 83%;
 	}
 	.content-item {
-	width: 96%;
+	width: 200px;
 	margin: 0 2% 25px;
-	float: left;
+	float: none;
 	display: block;
 	}
 	.item-box {
-	display: block;
-	position: relative;
+	display: inline-block;
 	overflow: hidden;
-	padding: 10px;
+	height: 190px;
 	}
 	.item-box p {
 		display: block;
+		float: none;
+		margin-top: 20px;
+	}
+	.item-box img {
+		width: 75%;
 	}
 }
