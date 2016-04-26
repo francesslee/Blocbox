@@ -3,6 +3,21 @@
    -moz-box-sizing: border-box;
 		box-sizing: border-box;
 }
+/* VERTICAL PADDING
+# Mobile - 10px
+# Desktop - 50px
+*/
+
+/* FONT SIZES
+# Mobile
+	h1 - 34px
+	h2 - 30px
+	h3 - 26px
+	p - 20px
+	a - 20px
+
+# Desktop
+*/
 
 html, body{ 
 	overflow-x: hidden; 
@@ -16,6 +31,48 @@ h1, h2, h3, h4, h5, h6 { font-family: "Quicksand", Helvetica, Arial, sans-serif;
 p {
 	margin: 20px;
 }
+
+/* MEDIA FONT SIZES */
+h1 {
+	font-size: 38px;
+}
+h2 {
+	font-size: 30px;
+}
+h3 {
+	font-size: 26px;
+	}
+p {
+	font-size: 20px;
+	line-height: 140%;
+}
+.log-in a {
+	font-size: 20px;
+}
+.sign-up a {
+	font-size: 20px;
+}
+a.btn {
+	font-size: 20px;
+	}
+h2.tier {
+		font-size: 28px;
+	}
+li.feature {
+		font-size: 22px;
+	}
+.month {
+	font-size: 18px;
+	}
+input[type=email], select {
+		font-size: 20px;
+	}
+input[type=password], select {
+		font-size: 20px;
+	}
+li.terms {
+		font-size: 12px;
+	}
 
 
 /* GRID */
@@ -44,7 +101,6 @@ p {
 	padding: 10px 15px 15px;
 	background: #1a75ac;
 	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
-	width: 95%;
 	margin: 0 auto;
 	margin-bottom: 10px;
 }
@@ -53,19 +109,18 @@ p {
 }
 /* Default styles for smallest screen */
 	header {
-	color: #fff;
-	background: #2195db;
+		color: #fff;
+		background: #2195db;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	h1 {
-		font-size: 26px;
 		text-align: center;
 	}
 	h2 {
-		font-size: 20px;
 		text-align: center;
 	}
 	p {
-		font-size: 14px;
 		text-align: center;
 		margin-bottom: 20px;
 	}
@@ -80,7 +135,7 @@ p {
 		list-style-type: none;
 	}
 	.site-logo {
-		width: 35%;
+		width: 140px;
 		float: left;
 		margin-top: 18px;
 	}
@@ -104,24 +159,22 @@ p {
 	.log-in a {
 		color: #fff;
 		margin-left: 20px;
-		font-size: 13px;
 	}
 	.sign-up a {
 		color: #fff;
 		margin-left: 10px;
-		font-size: 13px;
 	}
 	.btn {
 		border-radius: 2px;
 		background-color: #fff;
+		opacity: .95;
 		color: #2195db;
-		width: 90%;
+		width: 100%;
 		text-align: center;
 		font-weight: bold;
 		text-decoration: none;
 		padding: 20px 10px;
-		margin: auto;
-		margin-bottom: 10px;
+		margin: 20px auto;
 		display: block;
 	}
 	.btn-outline {
@@ -138,11 +191,10 @@ p {
 	}
 	.icon {
 		display: block;
-		width: 20%;
+		width: 30%;
 		margin: 0 auto;
 	}
 	h2.lower-hero {
-		font-size: 22px;
 		color: #767b82;
 		font-style: normal;
 		margin: 80px 10px 10px;
@@ -151,6 +203,9 @@ p {
 	p.lower-hero {
 		color: #767b82;
 		margin-bottom: 40px;
+	}
+	.one-third.benefit {
+		margin: 0;
 	}
 	.benefits {
 		color: #767b82;
@@ -165,24 +220,20 @@ p {
 		width: 60%;
 		margin: 10px auto;
 		text-align: center;
-		font-size: 18px;
 		font-weight: lighter;
 	}
 	.blue-area {
 		color: #fff;
 		background-color: #2195db;
-		padding-top: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	} 
-	h2.pricing {
-		font-size: 22px;
-	}
 	ul.pricing {
 		color: #fff;
 		background-color: #2195db;
 	}
 	h2.tier {
 		text-transform: uppercase;
-		font-size: 18px;
 		font-weight: lighter;
 	}
 	ul.feature {
@@ -191,7 +242,6 @@ p {
 	li.feature {
 		display: block;
 		text-align: center;
-		font-size: 14px;
 		margin-left: -40px;
 		float: none;
 	}
@@ -200,53 +250,61 @@ p {
 		margin-bottom: 0;
 		font-weight: lighter;
 	}
-	.month {
-		font-size: 14px;
-	}
 	.first-block {
-		margin-top: 30px;
-		margin-bottom: 30px;
+		margin-top: 10px;
+		margin-bottom: 10px;
 		font-weight: normal;
 	}
 	h3.first-block {
 		text-align: center;
-		margin: 0 auto 10px;
 		width: 100%;
 		color: #2195db;
 	}	
+	.second-block {
+		width: 80%;
+		margin: 0 auto;
+	}
 	input[type=email], select {
-		width: 75%;
 		padding: 12px 20px;
 		margin: 0 auto 10px;
 		border: 2px solid #2195db;
 		display: block;
 		text-align: center;
+		width: 100%;
 	}
 	input[type=password], select {
-		width: 75%;
 		padding: 12px 20px;
 		margin: 0 auto 10px;
 		border: 2px solid #2195db;
 		display: block;
 		text-align: center;
+		width: 100%;
 	}
+	div.cta {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		}
 	.btn.cta {
 		background-color: #2195db;
 		color: #fff;
-		width: 72%;
+		width: 100%;
 	}
 	fieldset {
 		border: none;
+		margin: 0;
+		margin-bottom: 10px;
+		padding: 0;
 	}
 	footer {
 		background-color: #767b82;
 		color: #FFFFFF;
-		margin-top: 40px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 	}
 	.footer-logo {
-		width: 30%;
+		width: 140px;
 		display: block;
-		margin: 10px auto;
+		margin: 16px auto;
 	}
 	.os {
 		width: 60%;
@@ -259,26 +317,25 @@ p {
 		display: inline-block;
 	}
 	ul.terms {
+		text-align: center;
+		padding-left: 0;
 	}
 	li.terms {
-		font-size: 12px;
-		float: left;
+		display: inline;
 	}
 	a.terms {
 		color: #FFF;
+		opacity: .8;
 	}
 	a.terms:hover {
-		opacity: .6;
+		opacity: 1;
 	}
 @media (min-width: 500px) {
-	.site-logo {
-		width: 25%;
-	}
 	.btn {
 		width: 90%;
 	}
 	.icon {
-		width: 15%;
+		width: 25%;
 	}
 	.images {
 		padding-top: 10px;
@@ -286,35 +343,53 @@ p {
 	.bookmarks {
 		padding-top: 10px;
 	}
-	.box {
-		width: 100%;
-	}
-	input[type=email], select {
-		margin: 0 auto 10px;
-	}
-	input[type=password], select {
-		margin: 0 auto;
-	}
-	.footer-logo {
-		width: 25%;
-		margin-top: 20px;
-	}
 	.os-icon {
 		width: 7%;
 	}
 } 
 @media (min-width: 650px) {
+	h1 {
+		font-size: 44px;
+	}
+	h2 {
+		font-size: 36px;
+	}
+	h3 {
+		font-size: 32px;
+		}
+	p {
+		font-size: 26px;
+		line-height: 140%;
+	}
+	.log-in a {
+		font-size: 23px;
+	}
+	.sign-up a {
+		font-size: 23px;
+	}
+	a.btn {
+		font-size: 23px;
+		}
+	h2.tier {
+			font-size: 36px;
+		}
+	li.feature {
+			font-size: 28px;
+		}
+	.month {
+		font-size: 24px;
+		}
+	input[type=email], select {
+			font-size: 26px;
+		}
+	input[type=password], select {
+			font-size: 26px;
+		}
+	li.terms {
+			font-size: 18px;
+		}
 	.container.blue-area {
 		width: 100%;	
-	}
-	.site-logo {
-		width: 20%;
-	}
-	h1 {
-		font-size: 30px;
-	}
-	.btn.sign-up {
-		font-size: 20px;
 	}
 	.macbook {
 		width: 70%;
@@ -322,81 +397,34 @@ p {
 		margin-left: auto;
 	}
 	.icon {
-		width: 25%;
+		width: 40%;
 	}
-	.btn.pricing {
-		font-size: 20px;
+	ul.benefits {
+		padding-left: 0;
+	}
+	li.benefit {
+		float: none;
+		display: inline-block;
 	}
 	input[type=email], select {
-		width: 40%;
 		margin: 0 auto 10px;
 	}
 	input[type=password], select {
-		width: 40%;
 		margin: 0 auto;
 	}
-	.btn.cta {
-		width: 39%;
-	}
-	.one-third {
+	.one-third.benefit {
 		width: 29.33333%;
-	}
-	.footer-logo {
-		width: 20%;
-	}
+	} 
 	.os-icon {
 		width: 5%;
 	}
 }
 @media (min-width: 758px) {
-	h1 {
-		font-size: 50px;
-	}
-	h2.lower-hero {
-		font-size: 34px;
-	}
-	h2.pricing {
-		font-size: 34px;
-	}
-	h2.tier {
-		font-size: 24px;
-	}
-	p {
-		font-size: 18px;
-	}
-	p.hero {
-		font-size: 20px;
-		}
-	p.lower-hero {
-		font-size: 20px;
-	}
-	p.pricing {
-		font-size: 20px;
-	}
-	h3 {
-		font-size: 28px;
-	}
-	input[type=email], select {
-		font-size: 20px;
-	}
-	input[type=password], select {
-		font-size: 20px;
-	}
-	.btn.cta {
-		font-size: 20px;
-	}
 	li.feature {
-		font-size: 18px;
 		margin-bottom: 5px;
 	}
-	.container {
-		width: 750px;
-	}
-	ul.container {
-		width: auto;
-	}
 }
-@media (min-width: 992px) {
+@media (min-width: 1100px) {
 	.container {
 		width: 80%;
 	}
@@ -404,28 +432,39 @@ p {
 		width: 95%;
 	}
 	.one-third {
-		width: 27%;
-	}
+		width: 29.33333%;
+	} 
 	.one-fourth {
 		width: 21%;
 	}
-	.site-logo {
-		width: 15%;
+	h1 {
+		font-size: 55px;
 	}
-	.log-in a {
-		font-size: 18px;
+	h2 {
+		font-size: 44px;
 	}
-	.sign-up a {
-		font-size: 18px;
+	p.hero {
+		font-size: 34px;
+		line-height: 140%;
 	}
 	.btn {
-		width: 80%;
+		padding: 30px;
 	}
-	.btn.sign-up {
-		width: 30%;
+	a.btn {
+		font-size: 30px;
+		font-weight: normal;
+	}
+	.icon {
+		width: 60%;
+	}
+	h3 {
+		font-size: 40px;
+		}
+	h3.benefit{
+		font-size: 38px;
 	}
 	header nav ul > li.btn-outline:hover {
-	background:#FFFFFF;
+	background: #fff;
 	}
 	header nav ul > li > a {
 		color: #FFFFFF;
@@ -433,70 +472,42 @@ p {
 	}
 	header nav ul > li.btn-outline:hover > a {
 		color: #2195db;
-		font-weight: bold;
 	}
 	p.hero {
-		font-size: 24px;
 		padding-bottom: 20px;
 	}
 	.btn.sign-up:hover {
-		opacity: .8;
+		opacity: 1;
 	}
-	p.lower-hero {
-		font-size: 24px;
-	}
-	h1 {
-		font-size: 60px;
-	}
-	h2.lower-hero { 
-		font-size: 36px;
-	}
-	p {
-		font-size: 22px;
-	}
-	.icon {
-		width: 40%;
+	a.btn.sign-up {
+		width: 400px;
 	}
 	.box {
-		width: 90%;
 		padding-top: 40px;
 		padding-bottom: 40px;
-	}
-	a.pricing:hover {
-		opacity: 0.8;
 	}
 	ul.pricing {
 		padding-bottom: 20px;
 	}
-	h2.pricing {
-		font-size: 38px;
+	a.pricing:hover {
+		opacity: 1;
 	}
 	.container.cta {
 		margin-top: 20px;
 	}
-	h3 {
-		font-size: 32px;
-	}
-	input[type=email], select {
-		width: 63%;
-	}
-	input[type=password], select {
-		width: 63%;
-	}
 	.first-block {
-		padding-top: 30px;
+		padding-top: 20px;
+		padding-right: 20px;
 		float: left;
 		width: 50%;
 		font-weight: normal;
 	}
 	.second-block {
-		padding-top: 40px;
+		padding-top: 20px;
+		padding-bottom: 10px;
 		float: left;
 		width: 50%;
 		margin: auto;
-	}
-	.btn.cta {
-		width: 60%;
 	}
 	.btn.cta:hover {
 		opacity: .6;
