@@ -20,8 +20,8 @@
 
 <!-- HEADER -->
 	<!-- NAVIGATION AREA (1 Container) -->
+<div class="sidebar">
 	<div class="container">
-        <div class="sidebar">
 		<!-- LOGO -->
 		<div class="logo">
 			<a href="#"><img class="site-symbol" src="images/site-symbol.png" alt="Blocbox"></a>
@@ -54,30 +54,31 @@
     </div>
    </div>
 </div>
+
+    <!-- ACCOUNT SETTINGS / Hidden in Mobile -->
+<div class="container">
+    <div class="account">
+      <a href="#"><img class="avatar" src="images/avatar.png" alt="Settings"></a>
+       <!-- <p class="usage">2 out of 5 GB</p> -->
+    </div>
+</div>
 </div>
 
 
-   <!-- Fix search !
+   	<!-- ITEM ACTION BUTTON (1 Container for the rest)-->
+<div class="main">
 
-   <li class="action"><a href="#"><i class="fa fa-search"></i> Search</a></li> -->
-
-   	<!-- ITEM ACTION BUTTON -->
-    <div class="container">
+<div class="container">
 	<div class="horiz-menu item-actions">
-	 	<div class="table">     				
-	 		<ul>
+	 	<div class="table search">     				
+	 	   <ul class="actions">
+            <li class="action search"><a href="#"><i class="fa fa-search"></i> Search</a></li> <!-- Hidden in mobile -->
 	    	<li class="action"><a href="#"><i class="fa fa-plus"></i> Add to Box</a></li>
 	    	<li class="action"><a href="#"><i class="fa fa-trash"></i> Delete</a></li>
 	    	<li class="action"><a href="#"><i class="fa fa-angle-double-right"></i> Move</a></li>
 	    	<li class="action"><a href="#"><i class="fa fa-copy"></i> Copy</a></li>
-	   </ul>
-	  </div>
-
- 	<!-- ACCOUNT SETTINGS / Hidden in Mobile -->
-    <div class="account">
-      <a href="#"><img class="avatar" src="images/avatar.png" alt="Settings"></a>
-       <!-- <p class="usage">2 out of 5 GB</p> -->
-  	</div>
+	       </ul>
+	    </div>
 
   </div>
   <!-- Item Count / Hidden in Mobile -->
@@ -87,10 +88,8 @@
 	</div>
     </div>
 
-<!-- ITEMS DISPLAY (1 Container) -->
+<!-- ITEMS DISPLAY -->
    <div class="items">
-    <!-- <div class="container"> 	-->
-
     			<a href="#" class="item-box">
     				<div class="content selected">
     					<img src="images/bbscript.png" alt="Blocbox_script">
@@ -171,6 +170,7 @@
     		</div>
     	</div>
     </div>
+
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/dropit.js"></script>
     <script type="text/javascript">
