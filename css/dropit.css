@@ -24,7 +24,7 @@
         width: 100px;
         min-width: 110px;
         list-style: none;
-        padding: 10px;
+        padding: 15px;
 
     }
     .dropit .dropit-open .dropit-submenu { 
@@ -35,7 +35,7 @@
      .dropit .dropit-open .dropit-submenu li {
         font-size: 16px;
         display: block;
-        padding: 5px;
+        padding: 10px;
     }
 
 

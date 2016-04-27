@@ -1,4 +1,4 @@
-/* COLORS
+/* Colors
 # Light Gray: Navigation and View Menu background: #f1f4f7
 # Gray: Body (Item Actions and Main) background: #dde5f1
 # Lilac: Hover or Selected Item: #b8bffc
@@ -10,6 +10,37 @@
 # 3 Items per row - 758px min width
 # 4 Items per row - 1100px min width
 */ 
+
+/* Layouts and classes for Mobile vs d\Desktop
+# Sidebar = .logo, .add-button, .view-type
+# Content = .item-actions, .items
+
+MOBILE
+
++--------------+
+|	 Sidebar   |
+|--------------|
+|	 Content   |
+|			   |	
+|			   |
+|			   |
++--------------+
+
+DESKTOP
+
++--------------------------+ 
+|	   | 				   |
+| Side | Content           |
+| bar  | 				   |
+| 	   | 				   |
+|	   |				   |
+|	   |				   |
+|	   |				   |
+|	   |				   |
+|	   |				   |
++--------------------------+
+
+*/
 
 html, body{ 
 	overflow-x: hidden; 
@@ -64,6 +95,7 @@ li.label {
 }
 p {
 	font-size: 16px;
+	margin-top: 6px;
 }
 p.count {
 	font-style: italic;
@@ -74,7 +106,7 @@ p.count {
 }
 .site-symbol {
 	width: 25px;
-	padding: 28px 10px 10px;
+	padding: 15px 10px 10px;
 }
 a.btn {
 	color: #fff;
@@ -88,9 +120,6 @@ a.btn {
 }
 .btn.action {
 	float: none;
-}
-a.btn:hover {
-	opacity: 1;
 }
 /* Hidden Avatar/Account in Mobile */
 .account {display:none;}
@@ -127,17 +156,22 @@ li.action {
 /* Hidden Item Selection Count in Mobile */
 .count {display:none;}
 
+.items {
+	width: 100%;
+}
+
+.content {
+	padding: 10px;
+	margin: 0 auto;
+	min-width: 295px; /* min width is 315px, but account for padding here */
+}
+
 /* 1 Item per row */
 .content > img {
 	width: 100%;
 	height: auto;
 }
-.content {
-	width: 90%;
-	padding: 10px;
-	margin: 0 auto;
-}
-.content:hover {
+.content.selected {
 	background-color: #b8bffc;
 }
 
@@ -154,7 +188,7 @@ img.avatar {
 	width: 30px;
 } 
 
-@media (min-width: 550px) {
+@media (min-width: 600px) {
 /* 2 items per row */
 .content {
 	display: inline-block;
@@ -185,6 +219,9 @@ a.btn {
 	padding: 10px 20px;
 	margin: 10px 20px;
 }
+a.btn:hover {
+	opacity: 1;
+}
 .account {display:block;}
 
 .count {display:block;}
@@ -195,5 +232,8 @@ a.btn {
 	width: 22.5%;
 	padding: 10px;
 	margin: 0 auto;
+	}
+.content:hover {
+	background-color: #b8bffc;
 	}
 }

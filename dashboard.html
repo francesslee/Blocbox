@@ -12,7 +12,7 @@
 	<!-- CSS -->
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style-dash.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/dropit.css">
 </head>
 
@@ -21,6 +21,7 @@
 <!-- HEADER -->
 	<!-- NAVIGATION AREA (1 Container) -->
 	<div class="container">
+        <div class="sidebar">
 		<!-- LOGO -->
 		<div class="logo">
 			<a href="#"><img class="site-symbol" src="images/site-symbol.png" alt="Blocbox"></a>
@@ -39,7 +40,7 @@
             </li>
           </ul>
 		</div>
-		<div style="clear: both;"></div>
+	<div style="clear: both;"></div>
 
 		<!-- VIEW MENU (No Container)-->
 	<div class="horiz-menu view-type">
@@ -52,12 +53,16 @@
      	 </ul>
     </div>
    </div>
+</div>
+</div>
+
 
    <!-- Fix search !
 
    <li class="action"><a href="#"><i class="fa fa-search"></i> Search</a></li> -->
 
    	<!-- ITEM ACTION BUTTON -->
+    <div class="container">
 	<div class="horiz-menu item-actions">
 	 	<div class="table">     				
 	 		<ul>
@@ -84,10 +89,10 @@
 
 <!-- ITEMS DISPLAY (1 Container) -->
    <div class="items">
-    <div class="container"> 	
+    <!-- <div class="container"> 	-->
 
     			<a href="#" class="item-box">
-    				<div class="content">
+    				<div class="content selected">
     					<img src="images/bbscript.png" alt="Blocbox_script">
     					<p>Blocbox script.doc</p>
     				</div>
@@ -108,7 +113,7 @@
     			</a>
 
     			<a href="#" class="item-box">
-    				<div class="content selected">
+    				<div class="content">
     					<img src="images/bun.png" alt="Pepper.png">
     					<p>Pepper.png</p>
     				</div>
@@ -165,6 +170,7 @@
 
     		</div>
     	</div>
+    </div>
     <script src="js/jquery-2.2.3.min.js"></script>
     <script src="js/dropit.js"></script>
     <script type="text/javascript">
