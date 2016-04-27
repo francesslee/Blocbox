@@ -1,8 +1,15 @@
 /* COLORS
-# Light Gray: Top Menu or Left Nav background: #f1f4f7
-# Gray: Item Actions and Main background: #dde5f1
-# Dark Gray: Hover or Selected Item: #b9c0ca
+# Light Gray: Navigation and View Menu background: #f1f4f7
+# Gray: Body (Item Actions and Main) background: #dde5f1
+# Lilac: Hover or Selected Item: #b8bffc
 */
+
+/* Items Display Grid
+# 1 Item per row - Smallest screen size
+# 2 Items per row - 550px min width
+# 3 Items per row - 758px min width
+# 4 Items per row - 1100px min width
+*/ 
 
 html, body{ 
 	overflow-x: hidden; 
@@ -13,6 +20,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6 { font-family: "Quicksand", Helvetica, Arial, sans-serif; 
 }
+/* UL padding left reset */
 ul {
 	list-style-type: none;
 	padding-left: 0;
@@ -20,9 +28,6 @@ ul {
 a {
 	text-decoration: none;
 	color: #353535;
-}
-p {
-	padding: 5px auto;
 }
 /* GRID */
 .container {
@@ -39,16 +44,139 @@ p {
 }
 .container:after {	clear: both; }
 
-.top-menu {
-	background-color: #f1f4f7;
-}
 /* SMALLEST BROWSER SIZE */
-.site-symbol {
-	width: 30px;
-	display: block;
-	margin: 15px auto;
+/* Min width of elements is 315 */
+body {
+	background-color: #dde5f1
 }
-a.btn.add {
+/* View Type Icons */
+/* Note: Add li items are font-size 16px */
+.fa {
+	font-size: 20px;
+}
+/* Font sizes for text labels */
+li.label {
+	font-size: 16px;
+}
+/* Removing left padding from 1st ul */
+.table > li:first-child {
+	padding-left: 0;
+}
+p {
+	font-size: 16px;
+}
+p.count {
+	font-style: italic;
+}
+.logo {
+	display: inline-block;
+	float: left;
+}
+.site-symbol {
+	width: 25px;
+	padding: 28px 10px 10px;
+}
+a.btn {
+	color: #fff;
+	background-color: #3c88cb;
+	border: none;
+	text-align: center;
+	padding: 15px 20px;
+	box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+	opacity: .9;
+	float: right;
+}
+.btn.action {
+	float: none;
+}
+a.btn:hover {
+	opacity: 1;
+}
+/* Hidden Avatar/Account in Mobile */
+.account {display:none;}
+
+/* For the View By and Item Action Menus */
+.horiz-menu {
+	display: block;
+	width: 100%;
+	min-height: 50px;
+	min-width: 315px;
+	bottom: 0;
+	margin: 10px auto;
+	background-color: #f1f4f7;
+	z-index: 1;
+}
+.table {
+	display: table;
+	margin: 0 auto;
+}
+.view-type li {
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+.view-type a {
+	opacity: .9;
+}
+.view-type a:hover {
+	opacity: 1;
+}
+li.action {
+	margin: 10px auto;
+}
+/* Hidden Item Selection Count in Mobile */
+.count {display:none;}
+
+/* 1 Item per row */
+.content > img {
+	width: 100%;
+	height: auto;
+}
+.content {
+	width: 90%;
+	padding: 10px;
+	margin: 0 auto;
+}
+.content:hover {
+	background-color: #b8bffc;
+}
+
+/* Couldn't figure out how to apply the hover to the link 
+a.item-box {
+  display: inline-block;
+  width: 90%;
+}
+a.item-box:hover {
+  background-color: #b8bffc;
+} */
+
+img.avatar {
+	width: 30px;
+} 
+
+@media (min-width: 550px) {
+/* 2 items per row */
+.content {
+	display: inline-block;
+	width: 45%;
+	padding: 10px;
+	margin: 0 auto;
+	}
+
+} 
+
+@media (min-width: 758px) {
+/* 3 items per row */
+.content {
+	display: inline-block;
+	width: 30%;
+	padding: 10px;
+	margin: 0 auto;
+	}
+} 
+
+@media (min-width: 992px) {
+a.btn {
 	color: #fff;
 	background-color: #3c88cb;
 	border: none;
@@ -57,162 +185,15 @@ a.btn.add {
 	padding: 10px 20px;
 	margin: 10px 20px;
 }
-li.filtered {
-	padding: 5px;
-}
-ul.view {
-	padding-left: 30px;
-	margin-top: 10px;
-}
-img.avatar {
-	width: 30px;
-}
-p.usage {
-	font-size: 12px;
-	display: inline;
-}
-p.count {
-	font-size: 13px;
-	font-style: italic;
-}
-a {
-	font-size: 13px;
-}
-.item-actions {
-	background-color: #dde5f1;
-}
-ul.item-actions li {
-	display: inline;
-}
-li.action {
-	padding-bottom: 10px;
-	padding-right: 5px;
-	float: right;
-}
-.items {
-	background-color: #dde5f1;
-	padding-bottom: 10px;
-	float: left;
-	width: 98%;
-}
-.content-item {
-	width: 100%;
-	padding: 4px;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #C8C8C8;
-}
-.items {
-	width: 98%;
-}
-.item-box {
-	display: inline;
-}
-.item-box img{
-	width: 25%;
-}
-.item-box p {
-	font-size: 12px;
-	display: inline;
-	float: right;
-	margin-top: 20px;
-}
-.selected {
-	background-color: #b9c0ca;
-}
-@media (min-width: 500px) {
-p.count {
-	float: left;
-	padding-top: 3px;
-	}
-.item-box p {
-	margin-top: 50px;
-	}
-a.item-box:hover {
-	background-color: #b9c0ca;
-}
-ul.item-actions {
-	margin-top: 13px;
-	float: right;
-	}
-.content-item {
-	border-width: 0;
-	}
-}
-@media (min-width: 650px) {
-.left-nav {
-	height: 100vh;
-	width: 20%;
-	color: #353535;
-	background-color: #f1f4f7;
-	float: left;
-	position: fixed;
-	}
-.item-actions {
-	width: 75%;
-	margin-right: 0;
-	float: right;
-	}
-div.display-menu {
-	width: 80%;
-	}
-.content-item {
-	display: block;
-}
-.item-box p {
-	margin-top: 40px;
-	}
-.items {
-	width: 98%;
-	float: right;
-	}
-.settings {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	}
-.avatar {
-	float: none;
-	width: 100%;
-	margin: 0 auto;
-	}
-}
-@media (min-width: 992px) {
-	a:hover {
-		opacity: .7;
-	}
-	.left-nav {
-		width: 14%;
-	}
-	.item-actions {
-		width: 83%;
-		display: block;
-	}
-	.item-actions > a {
-		float: right;
-	}
-	.items {
-		width: 98%;
-	}
-	.content-item {
-	width: 200px;
-	margin: 0 2% 25px;
-	display: block;
-	}
-	.item-box {
+.account {display:block;}
+
+.count {display:block;}
+
+/* 4 items per row */
+.content {
 	display: inline-block;
-	overflow: hidden;
-	height: 190px;
-	}
-	.item-box p {
-		display: block;
-		float: none;
-		margin-top: 20px;
-	}
-	.item-box img {
-		width: 75%;
+	width: 22.5%;
+	padding: 10px;
+	margin: 0 auto;
 	}
 }

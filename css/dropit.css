@@ -10,28 +10,55 @@
 /* These styles assume you are using ul and li */
 .dropit {
     list-style: none;
-	padding: 0;
 	margin: 15px 0 0;
 }
 .dropit .dropit-trigger { position: relative; }
+
+/* Smallest browser width */
 .dropit .dropit-submenu {
-    position: absolute;
-    top: 100%;
-    right: 0; /* dropdown left or right */
-    z-index: 1000;
-    display: none;
-    min-width: 110px;
-    list-style: none;
-	padding: 5px;
-	margin: 0;
-    height: 110px;
-}
-.dropit .dropit-open .dropit-submenu { 
-    display: block; 
-    background-color: #fff;
-}
- .dropit .dropit-open .dropit-submenu li {
-  display: block;
-  padding: 5px;
-  margin: 5px 10px;
+        position: absolute;
+        top: 55px;
+        right: 0; /* dropdown left or right */
+        z-index: 1000;
+        display: none;
+        width: 100px;
+        min-width: 110px;
+        list-style: none;
+        padding: 10px;
+
+    }
+    .dropit .dropit-open .dropit-submenu { 
+        display: block; 
+        background-color: #fff;
+        box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+    }
+     .dropit .dropit-open .dropit-submenu li {
+        font-size: 16px;
+        display: block;
+        padding: 5px;
+    }
+
+
+@media (min-width: 1100px) {
+    .dropit .dropit-submenu {
+        position: absolute;
+        top: 100%;
+        right: 0; /* dropdown left or right */
+        z-index: 1000;
+        display: none;
+        min-width: 110px;
+        list-style: none;
+    	padding: 5px;
+    	margin: 0;
+        height: 110px;
+    }
+    .dropit .dropit-open .dropit-submenu { 
+        display: block; 
+        background-color: #fff;
+    }
+     .dropit .dropit-open .dropit-submenu li {
+        display: block;
+        padding: 5px;
+        margin: 5px 10px;
+    }
 }

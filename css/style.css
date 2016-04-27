@@ -335,7 +335,7 @@ li.terms {
 	}
 @media (min-width: 500px) {
 	.btn {
-		width: 90%;
+		width: 60%;
 	}
 	.icon {
 		width: 25%;
@@ -361,18 +361,9 @@ li.terms {
 		font-size: 32px;
 		}
 	p {
-		font-size: 26px;
+		font-size: 22px;
 		line-height: 140%;
 	}
-	.log-in a {
-		font-size: 23px;
-	}
-	.sign-up a {
-		font-size: 23px;
-	}
-	a.btn {
-		font-size: 23px;
-		}
 	h2.tier {
 			font-size: 32px;
 		}
@@ -444,30 +435,31 @@ li.terms {
 		width: 21%;
 	}
 	h1 {
-		font-size: 55px;
+		font-size: 50px;
 	}
 	h2 {
 		font-size: 44px;
 	}
 	p.hero {
-		font-size: 30px;
+		font-size: 26px;
 		line-height: 140%;
 	}
-	.btn {
-		padding: 30px;
-	}
 	a.btn {
-		font-size: 30px;
+		font-size: 26px;
 		font-weight: normal;
 	}
 	h2.lower-hero {
 		padding-top: 20px;
+		margin-top: 120px;
 	}
 	h3 {
 		font-size: 40px;
 		}
+	h3.first-block {
+		font-size: 32px;
+	}
 	h3.benefit{
-		font-size: 38px;
+		font-size: 32px;
 	}
 	header nav ul > li.btn-outline:hover {
 	background: #fff;
