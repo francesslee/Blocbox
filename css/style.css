@@ -50,10 +50,10 @@ p {
 	line-height: 140%;
 }
 .log-in a {
-	font-size: 20px;
+	font-size: 18px;
 }
 .sign-up a {
-	font-size: 20px;
+	font-size: 18px;
 }
 a.btn {
 	font-size: 20px;
@@ -208,17 +208,15 @@ li.terms {
 		color: #767b82;
 		margin-bottom: 40px;
 	}
-	.one-third.benefit {
-		margin: 0;
-	}
 	.benefits {
 		color: #767b82;
 	}
 	ul.benefits {
 		text-align: center;
 	}
-	.benefit {
+	h3.benefit {
 		font-weight: lighter;
+		text-align: center;
 	}
 	h3.icon {
 		width: 60%;
@@ -360,9 +358,15 @@ li.terms {
 	h3 {
 		font-size: 32px;
 		}
+	h3.benefit {
+		font-size: 26px;
+	}
 	p {
 		font-size: 22px;
 		line-height: 140%;
+	}
+	p.description {
+		font-size: 20px;
 	}
 	h2.tier {
 			font-size: 32px;
