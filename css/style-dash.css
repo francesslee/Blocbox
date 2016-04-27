@@ -236,11 +236,16 @@ img.avatar {
 	margin: 0 auto;
 	float: none;
 }
+.logo > a {
+	text-align: center;
+	display: block;
+}
 img.site-symbol{
 	display: block;
 	float: none;
 	text-align: center;
 	padding: 15px 10px 10px;
+	margin: 0 auto;
 }
 a.btn {
 	color: #fff;
@@ -279,15 +284,20 @@ a.btn:hover {
 	opacity: 1;
 }
 .account { 	
+	display: block;
 	position: fixed;
 	bottom: 0;
-	margin: 10px auto;
+	margin: 20px auto;
+	width: 14%;
+}
+p.usage {
+	font-size: 14px;
 }
 .account > a {
-	/* display: inline-block; */
-}
+	 display: block; 
+} 
 img.avatar {
-	/* display: inline-block; */
+	 display: block; 
 }
 
 .count { display:block; }
@@ -298,11 +308,11 @@ p.count {
 
 .search { display:block; }
 
-/* 4 items per row */
-.content > img {
-	width: 75%;
-	height: auto;
+.items {
+	padding-top: 8px;
 }
+
+/* 4 items per row */
 .content {
 	display: inline-block;
 	width: 22.5%;
