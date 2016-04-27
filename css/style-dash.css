@@ -101,7 +101,6 @@ p.count {
 	font-style: italic;
 }
 .logo {
-	display: inline-block;
 	float: left;
 }
 .site-symbol {
@@ -132,7 +131,6 @@ a.btn {
 	display: block;
 	width: 100%;
 	min-height: 50px;
-	min-width: 315px;
 	bottom: 0;
 	margin: 10px auto;
 	background-color: #f1f4f7;
@@ -166,7 +164,6 @@ li.action {
 .content {
 	padding: 10px;
 	margin: 0 auto;
-	min-width: 295px; /* min width is 315px, but account for padding here */
 }
 
 /* 1 Item per row */
@@ -191,26 +188,34 @@ img.avatar {
 	width: 30px;
 } 
 
+/* TABLET LAYOUT */
 @media (min-width: 600px) {
 /* 2 items per row */
 .content {
 	display: inline-block;
 	width: 45%;
-	padding: 10px;
+	padding: 2.2%;
 	margin: 0 auto;
+	overflow: hidden;
 	}
-
+/* Flatten Items Menu */
+li.action {
+	display: inline;
+	padding-right: 10px;
+	padding-left: 10px;
+	}
 } 
 
 @media (min-width: 758px) {
 /* 3 items per row */
 .content {
 	display: inline-block;
-	width: 30%;
-	padding: 10px;
+	width: 28%;
+	padding: 2.4%;
 	margin: 0 auto;
 	}
 } 
+
 
 /* DESKTOP LAYOUT */
 @media (min-width: 992px) {
@@ -221,6 +226,7 @@ img.avatar {
 	display: block;
 	position: fixed;
 	background-color: #f1f4f7;
+	overflow: hidden;
 }
 .main {
 	float: right;
@@ -233,7 +239,6 @@ img.avatar {
 	background-color: transparent;
 }
 .logo {
-	margin: 0 auto;
 	float: none;
 }
 .logo > a {
@@ -241,9 +246,6 @@ img.avatar {
 	display: block;
 }
 img.site-symbol{
-	display: block;
-	float: none;
-	text-align: center;
 	padding: 15px 10px 10px;
 	margin: 0 auto;
 }
@@ -293,13 +295,6 @@ a.btn:hover {
 p.usage {
 	font-size: 14px;
 }
-.account > a {
-	 display: block; 
-} 
-img.avatar {
-	 display: block; 
-}
-
 .count { display:block; }
 
 p.count {
@@ -315,8 +310,9 @@ p.count {
 /* 4 items per row */
 .content {
 	display: inline-block;
-	width: 22.5%;
-	padding: 10px;
+	width: 20%;
+	padding: 2.2%;
+	padding-bottom: 3px;
 	margin: 0 auto;
 	}
 .content:hover {
