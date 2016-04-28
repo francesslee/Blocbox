@@ -24,12 +24,14 @@
 	<div class="container">
 		<!-- LOGO -->
 		<div class="logo">
-			<a href="#"><img class="site-symbol" src="images/site-symbol.png" alt="Blocbox"></a>
+			<a href="#">
+                <img class="site-symbol" src="images/site-symbol.png" alt="Blocbox">
+            </a>
 		</div>
 
 		<!-- ADD BUTTON AND DROPDOWN -->
 		<div class="add-button">
-			    <ul class="menu">
+	    <ul class="menu">
             <li>
               <a href="#" class="btn">+</a>
               <ul>
@@ -55,13 +57,10 @@
    </div>
 </div>
 
-    <!-- ACCOUNT SETTINGS / Hidden in Mobile (1 container_-->
-<div class="container">
+    <!-- ACCOUNT SETTINGS / Hidden in Mobile (No container)-->
     <div class="account">
       <a href="#"><img class="avatar" src="images/avatar.png" alt="Settings"></a>
-       <p class="usage">2 out of 5 GB</p> 
     </div>
-</div>
 </div>
 
 
@@ -69,8 +68,13 @@
 <div class="main">
 
 <div class="container">
-	<div class="horiz-menu item-actions">
-	 	<div class="table search">     				
+
+    <!-- Item Count / Hidden in Mobile -->
+    <div class="count">
+            <p class="count">1 Item Selected</p>
+    </div>
+
+	<div class="horiz-menu item-actions">   				
 	 	   <ul class="actions">
             <li class="action search"><a href="#"><i class="fa fa-search"></i> Search</a></li> <!-- Hidden in mobile -->
 	    	<li class="action"><a href="#"><i class="fa fa-plus"></i> Add to Box</a></li>
@@ -81,15 +85,9 @@
 	    </div>
 
   </div>
-  <!-- Item Count / Hidden in Mobile -->
-  <div class="count">
-    <div class="container">
-		<p class="count">1 Item Selected</p>
-	</div>
-    </div>
 
 <!-- ITEMS DISPLAY -->
-   <div class="items">
+   <div class="container">
     			<a href="#" class="item-box">
     				<div class="content selected">
     					<img src="images/bbscript.png" alt="Blocbox_script">
