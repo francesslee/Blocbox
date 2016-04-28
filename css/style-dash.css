@@ -168,6 +168,8 @@ li.action {
 .content {
 	padding: 10px;
 	margin: 0 auto;
+	border-bottom: solid gray;
+	border-width: 1px;
 }
 
 /* 1 Item per row */
@@ -177,6 +179,7 @@ li.action {
 }
 .content.selected {
 	background-color: #b8bffc;
+	border-style: none;
 }
 
 /* Couldn't figure out how to apply the hover to the link 
@@ -201,6 +204,7 @@ img.avatar {
 	padding: 2.2%;
 	margin: 0 auto;
 	overflow: hidden;
+	border-style: none;
 	}
 /* Flatten Items Menu */
 li.action {
@@ -317,12 +321,19 @@ p.count {
 /* 4 items per row */
 .content {
 	display: inline-block;
-	width: 22.4%;
-	padding: 1.1%;
+	width: 22.3%;
+	padding: 1.13%;
 	padding-bottom: 3px;
 	margin: 0 auto;
 	}
 .content:hover {
 	background-color: #b8bffc;
+	}
+}
+@media (min-width: 1100px) {
+	/* 5 Items per row! */
+	.content {
+	width: 17.3%;
+	padding: 1.15%;
 	}
 }
