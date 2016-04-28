@@ -327,6 +327,7 @@ p.count {
 	padding: 1.13%;
 	padding-bottom: 3px;
 	margin: 0 auto;
+	vertical-align: top;
 	}
 .content:hover {
 	background-color: #b8bffc;
