@@ -136,6 +136,9 @@ a.btn {
 	background-color: #f1f4f7;
 	z-index: 1;
 }
+/* Hide the Desktop version of View Menu */
+.desktop { display: none;}
+
 .table {
 	display: table;
 	margin: 0 auto;
@@ -193,6 +196,7 @@ a.item-box:hover {
 
 img.avatar {
 	width: 30px;
+	display: inline-block;
 } 
 
 /* TABLET LAYOUT */
@@ -269,16 +273,20 @@ a.btn {
 	padding: 10px 15px;
 	margin: 0 auto;
 }
+/* Hide the Mobile version of View Menu, show Desktop */
+.mobile {display: none;}
+.desktop {display: block;}
+
 /* View by menu adjustment */
 .view-type li {
 	display: block;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	font-size: 16px;
 }
 li.filter {
 	padding-left: 30px;
-	font-size: 23px;
-	opacity: .7;
+	opacity: .9;
 }
 
 /* Item action menu adjustments */
@@ -295,14 +303,15 @@ a.btn:hover {
 }
 .account { 	
 	display: block;
-	position: absolute;
+	position: fixed;
 	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: 20px auto;
+	margin: 10px auto;
 	width: 14%;
+	text-align: center;
 }
-
+.usage {
+	font-size: 14px;
+}
 .count { 
 	display:block; 
 	margin-top: 13px;
