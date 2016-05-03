@@ -136,7 +136,7 @@ a.btn {
 	background-color: #f1f4f7;
 	z-index: 1;
 }
-/* Hide the Desktop version of View Menu */
+/* Hide the labels in View Menu */
 .desktop { display: none;}
 
 .table {
@@ -273,9 +273,8 @@ a.btn {
 	padding: 10px 15px;
 	margin: 0 auto;
 }
-/* Hide the Mobile version of View Menu, show Desktop */
-.mobile {display: none;}
-.desktop {display: block;}
+/* Hide the labels of View Menu in Mobile, show in Desktop */
+.desktop {display: inline;}
 
 /* View by menu adjustment */
 .view-type li {
